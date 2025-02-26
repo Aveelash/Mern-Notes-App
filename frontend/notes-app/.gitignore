@@ -1,24 +1,26 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# Ignore node_modules in backend
+backend/node_modules/
 
-node_modules
-dist
-dist-ssr
-*.local
+# Ignore sensitive backend files
+backend/.env
+backend/config.json
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Ignore node_modules in frontend (if applicable)
+frontend/node_modules/
+
+# Ignore system & editor-specific files
+.vscode/
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+
+# Ignore build files
+**/dist/
+**/build/
+
+# Logs
+logs/
+*.log
+npm-debug.log
+yarn-error.log
+
+
